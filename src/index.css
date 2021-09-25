@@ -1,13 +1,89 @@
-body {
+/* -------------------------
+ * General style
+------------------------- */
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+  line-height: 1.5;
+  background-color: #282c34;
+  color: hsl(0, 0%, 67%);
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: hsl(0, 0%, 80%);
+  font-weight: 500;
+  line-height: 1.2;
+}
+a, button {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+}
+ul, ol {
+  padding-left: 30px;
+}
+/* -------------------------
+ * Custom Scrollbar Style
+------------------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 11px;
+  background: #F5F5F5;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--clr-primary-hs), 65%);
+  border-radius: 5px;
+  border: 0.5px solid hsl(var(--clr-primary-hsl));
+  transition: all 0.3s ease;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0A6DAD;
+}
+/* -------------------------
+ * Custom Classes
+------------------------- */
+:root {
+  --spacer: 15px;
+  --clr-primary-dark-hsl: 148, 100%, 15%;
+  --clr-primary-dark-base-hs: 120, 100%;
+  --clr-primary-dark-base-hsl: 101, 100%, 35%;
+  --clr-primary-light-hsl: 75, 100%, 60%;
+  --clr-primary-light-base-hs: 83, 88%;
+  --clr-primary-light-base-hsl: 90, 100%, 44%;
+}
+.p-base {
+  padding: var(--spacer);
+}
+.px-base {
+  padding-left: var(--spacer);
+  padding-right: var(--spacer);
+}
+.pl-base {
+  padding-left: var(--spacer);
+}
+.pr-base {
+  padding-right: var(--spacer);
 }

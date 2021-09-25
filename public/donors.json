@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "grantorName": "Edward Bass",
+    "grantorImage": "https://github.com/FazleRabbiRana/top-donors-data/blob/main/images/edward_bass_200x200.jpg",
+    "nationality": "USA",
+    "organization": "Sid W. Richardson Foundation",
+    "designation": "Chairman",
+    "grantedAmount": 700000,
+    "currency": "USD"
+  },
+  {
+    "id": 2,
+    "grantorName": "John Arnold",
+    "grantorImage": "https://github.com/FazleRabbiRana/top-donors-data/blob/main/images/john_arnold_200x200.jpg",
+    "nationality": "USA",
+    "organization": "Arnold Ventures LLC",
+    "designation": "Founder",
+    "grantedAmount": 1000000,
+    "currency": "USD"
+  },
+  {
+    "id": 3,
+    "grantorName": "Guy Weston",
+    "grantorImage": "https://github.com/FazleRabbiRana/top-donors-data/blob/main/images/guy_weston_200x200.jpg",
+    "nationality": "UK",
+    "organization": "Garfield Weston Foundation",
+    "designation": "Chairman",
+    "grantedAmount": 400000,
+    "currency": "USD"
+  },
+  {
+    "id": 4,
+    "grantorName": "Pierre Omidyar",
+    "grantorImage": "https://github.com/FazleRabbiRana/top-donors-data/blob/main/images/pierre_omidyar_200x200.jpg",
+    "nationality": "France",
+    "organization": "Ulupono Initiative",
+    "designation": "Founder",
+    "grantedAmount": 1500000,
+    "currency": "USD"
+  },
+  {
+    "id": 5,
+    "grantorName": "Stephen Schwarzman",
+    "grantorImage": "https://github.com/FazleRabbiRana/top-donors-data/blob/main/images/stephen_schwarzman_200x200.jpg",
+    "nationality": "USA",
+    "organization": "Blackstone Group",
+    "designation": "Chairman & CEO",
+    "grantedAmount": 1200000,
+    "currency": "USD"
+  },
+  {
+    "id": 6,
+    "grantorName": "Bob Parsons",
+    "grantorImage": "https://github.com/FazleRabbiRana/top-donors-data/blob/main/images/bob_parsons_200x200.jpg",
+    "nationality": "USA",
+    "organization": "Bob & Renee Parsons Foundation",
+    "designation": "Founder",
+    "grantedAmount": 800000,
+    "currency": "USD"
+  },
+  {
+    "id": 7,
+    "grantorName": "Marc Rowan",
+    "grantorImage": "https://github.com/FazleRabbiRana/top-donors-data/blob/main/images/marc_rowan_200x200.jpg",
+    "nationality": "USA",
+    "organization": "Youth Renewal Fund",
+    "designation": "Founding Member",
+    "grantedAmount": 600000,
+    "currency": "USD"
+  },
+  {
+    "id": 8,
+    "grantorName": "Marc Benioff",
+    "grantorImage": "https://github.com/FazleRabbiRana/top-donors-data/blob/main/images/marc_benioff_200x200.jpg",
+    "nationality": "USA",
+    "organization": "Salesforce.com Foundation",
+    "designation": "Chairman",
+    "grantedAmount": 1200000,
+    "currency": "USD"
+  },
+  {
+    "id": 9,
+    "grantorName": "Michael Bloomberg",
+    "grantorImage": "https://github.com/FazleRabbiRana/top-donors-data/blob/main/images/michael_bloomberg_200x200.jpg",
+    "nationality": "USA",
+    "organization": "Bloomberg Philanthropies",
+    "designation": "Founder",
+    "grantedAmount": 1500000,
+    "currency": "USD"
+  },
+  {
+    "id": 10,
+    "grantorName": "Julian Robertson Jr.",
+    "grantorImage": "https://github.com/FazleRabbiRana/top-donors-data/blob/main/images/julian_robertson_200x200.jpg",
+    "nationality": "USA",
+    "organization": "Robertson Foundation",
+    "designation": "Founder",
+    "grantedAmount": 1200000,
+    "currency": "USD"
+  },
+  {
+    "id": 11,
+    "grantorName": "Brian Acton",
+    "grantorImage": "https://github.com/FazleRabbiRana/top-donors-data/blob/main/images/brian_acton_200x200.jpg",
+    "nationality": "USA",
+    "organization": "Wildcard Giving Foundation",
+    "designation": "Founder",
+    "grantedAmount": 500000,
+    "currency": "USD"
+  },
+  {
+    "id": 12,
+    "grantorName": "Denny Sanford",
+    "grantorImage": "https://github.com/FazleRabbiRana/top-donors-data/blob/main/images/denny_sanford_200x200.jpg",
+    "nationality": "USA",
+    "organization": "United National Corporation",
+    "designation": "Chairman & CEO",
+    "grantedAmount": 900000,
+    "currency": "USD"
+  }
+]
