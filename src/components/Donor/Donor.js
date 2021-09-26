@@ -11,12 +11,12 @@ const Donor = (props) => {
 			<div className="donor-image">
 				<img src={grantorImage} alt={grantorName} />
 			</div>
-			<h3>{grantorName}</h3>
-			<p>{designation}</p>
-			<p><em>{organization}, {nationality}</em></p>
-			<h4>
-				<span className="label">Grant Amount:</span>
-				<span className="value">{grantedAmount}</span>
+			<h3 className="name">{grantorName}</h3>
+			<p className="designation">{designation}</p>
+			<p className="organization"><em>{organization}, {nationality}</em></p>
+			<h4 className="grant">
+				<span className="label">Grant Amount: </span>
+				<span className="value">${grantedAmount}</span>
 			</h4>
 			<button 
 				className="btn-regular"

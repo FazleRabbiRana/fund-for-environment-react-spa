@@ -2,7 +2,7 @@
  * General style
 ------------------------- */
 :root {
-  --spacer: 15px;
+  --spacer: 12px;
   --clr-primary-dark-hsl: 148, 100%, 15%;
   --clr-primary-dark-base-hs: 120, 100%;
   --clr-primary-dark-base-hsl: 101, 100%, 35%;
@@ -30,7 +30,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
 }
-img {
+img, svg {
   max-width: 100%;
   height: auto;
 }
@@ -49,11 +49,18 @@ a, button {
 ul, ol {
   padding-left: 30px;
 }
+section {
+  padding: 50px 0;
+}
 /* -------------------------
  * Custom Classes
 ------------------------- */
 .p-base {
   padding: var(--spacer);
+}
+.py-base {
+  padding-top: var(--spacer);
+  padding-bottom: var(--spacer);
 }
 .px-base {
   padding-left: var(--spacer);
@@ -64,6 +71,12 @@ ul, ol {
 }
 .pr-base {
   padding-right: var(--spacer);
+}
+.pt-base {
+  padding-top: var(--spacer);
+}
+.pb-base {
+  padding-bottom: var(--spacer);
 }
 .my-base {
   margin-top: var(--spacer);

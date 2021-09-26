@@ -1,13 +1,34 @@
 .donor {
 	text-align: center;
 	padding: 15px;
-	background-color: hsl(var(--clr-primary-dark-base-hsl));
+	background-color: hsl(101, 100%, 35%);
+	color: hsl(220, 13%, 18%);
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	isolation: isolate;
+	z-index: 1;
+}
+.donor::before {
+	content: '';
+	background-color: hsla(101, 100%, 20%, 0.2);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	clip-path: polygon(0% 0%, 0% 0%, 12% 50%, 0% 100%, 0% 100%);
+	transition: all 0.6s;
+}
+.donor:hover::before {
+	clip-path: polygon(0% 0%, 100% 0%, 112% 50%, 100% 100%, 0% 100%);
 }
 .donor-image {
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
-	border: 3px solid darkgray;
+	border: 5px solid hsla(101, 100%, 50%, 0.5);
 	margin: 0 auto;
 	overflow: hidden;
 }
