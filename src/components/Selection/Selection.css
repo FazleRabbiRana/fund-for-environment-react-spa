@@ -1,12 +1,19 @@
 .selection-summery {
-	background-color: hsl(0, 0%, 94%);
+	background-color: hsl(101, 100%, 96%);
 	color: hsl(220, 13%, 18%);
+	position: fixed;
+	width: 290px;
+	max-width: calc(100% - (var(--spacer) * 2));
+	max-height: calc(100vh - 282px - 40px);
+	overflow-y: auto;
+	z-index: 8;
 }
 .selections-brief {
 	border-bottom: 1px solid hsl(0, 0%, 50%);
 }
 .summery-title {
-	color: hsl(120, 100%, 25%);
+	color: hsl(220, 13%, 15%);
+	font-weight: 600;
 	font-size: 22px;
 	border-bottom: 1px solid hsl(0, 0%, 50%);
 }
@@ -14,8 +21,11 @@
 .selected-amount,
 .selections-list-title {
 	color: hsl(220, 13%, 15%);
+	font-size: 16px;
+	line-height: 1.7;
+}
+.selections-list-title {
 	font-size: 18px;
-	line-height: 1.5;
 }
 .selected-amount .not-enough {
 	color: hsl(348, 83%, 47%);
@@ -29,4 +39,28 @@
 }
 .selection-list li > span {
 	font-weight: 500;
+	font-size: 92%;
+}
+
+/* -------------------------
+ * Responsive selections summery
+------------------------- */
+@media (max-width: 767.98px) {
+	.selection-summery {
+		border: 3px solid hsl(220, 13%, 12%);
+		box-shadow: 0 0 10px 1px hsla(0, 0%, 10%, 0.5);
+		max-height: calc(100vh - 137px - 40px);
+		top: 137px;
+		right: -200%;
+		transition: all 0.5s ease;
+	}
+	.selection-summery.active {
+		right: var(--spacer);
+	}
+}
+@media (max-width: 575.98px) {
+	.selection-summery {
+		top: 142px;
+		max-height: calc(100vh - 142px - 40px);
+	}
 }

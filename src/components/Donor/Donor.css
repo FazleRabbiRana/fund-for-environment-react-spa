@@ -1,5 +1,4 @@
 .donor {
-	text-align: center;
 	padding: 15px;
 	background-color: hsl(101, 100%, 30%);
 	color: hsl(220, 13%, 10%);
@@ -74,4 +73,10 @@
 }
 .btn-regular .icon {
 	margin-right: 10px;
+	font-size: 20px;
+}
+.btn-regular[disabled="true"] {
+	opacity: 0.3;
+	cursor: not-allowed;
+	pointer-events: none;
 }

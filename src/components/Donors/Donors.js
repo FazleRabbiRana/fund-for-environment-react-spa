@@ -20,8 +20,6 @@ const Donors = () => {
 		const newDonors = [...selectedDonors];
 		if(newDonors.indexOf(donor) === -1) {
 			newDonors.push(donor);
-		} else {
-			console.log("This donor's already been selected.");
 		}
 		setSelectedDonors(newDonors);
 	}
@@ -30,6 +28,9 @@ const Donors = () => {
 	const selectedTotalReducer = (previous, current) => previous + current.grantedAmount;
 	const selectedTotalAmount = selectedDonors.reduce(selectedTotalReducer, 0);
 
+	// selection summery toggle on button click
+	const summeryViewToggle = () => document.getElementById('selection_summery').classList.toggle('active');
+
 	return (
 		<section className="donors-section">
 			<div className="all-donors p-base">
@@ -37,9 +38,10 @@ const Donors = () => {
 					donors.map(donor => <Donor key={donor.id} donor={donor} selectDonor={selectDonor} />)
 				}
 			</div>
+			
 			<div className="selections-container p-base">
 				<div className="floating-amount">
-					<button className="selection-viewer">
+					<button onClick={summeryViewToggle} className="selection-viewer">
 						<img src={moneyBagIcon} alt="Money bag icon" className="icon" />
 						<span>${selectedTotalAmount}</span>
 					</button>

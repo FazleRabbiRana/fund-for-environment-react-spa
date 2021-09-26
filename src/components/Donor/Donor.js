@@ -7,7 +7,7 @@ const Donor = (props) => {
 	const {grantorName, grantorImage, nationality, organization, designation, grantedAmount} = props.donor;
 
 	return (
-		<div className="donor">
+		<div className="donor text-center">
 			<div className="donor-image">
 				<img src={grantorImage} alt={grantorName} />
 			</div>
@@ -23,7 +23,10 @@ const Donor = (props) => {
 			</h4>
 			<button 
 				className="btn-regular mt-base"
-				onClick={() => props.selectDonor(props.donor)}
+				onClick={(event) => {
+					props.selectDonor(props.donor);
+					event.target.setAttribute('disabled', 'true');
+				}}
 			>
 				<FontAwesomeIcon icon={faPlusCircle} className="icon" />
 				Select Donor
