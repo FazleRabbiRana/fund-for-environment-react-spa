@@ -1,0 +1,32 @@
+.selection-summery {
+	background-color: hsl(0, 0%, 94%);
+	color: hsl(220, 13%, 18%);
+}
+.selections-brief {
+	border-bottom: 1px solid hsl(0, 0%, 50%);
+}
+.summery-title {
+	color: hsl(120, 100%, 25%);
+	font-size: 22px;
+	border-bottom: 1px solid hsl(0, 0%, 50%);
+}
+.selected-number,
+.selected-amount,
+.selections-list-title {
+	color: hsl(220, 13%, 15%);
+	font-size: 18px;
+	line-height: 1.5;
+}
+.selected-amount .not-enough {
+	color: hsl(348, 83%, 47%);
+}
+.selected-amount .enough {
+	color: hsl(120, 100%, 25%);
+}
+.selection-list li {
+	font-size: 14px;
+	margin-top: var(--spacer);
+}
+.selection-list li > span {
+	font-weight: 500;
+}

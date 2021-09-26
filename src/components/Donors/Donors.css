@@ -11,9 +11,43 @@
 .all-donors {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-	gap: 20px;
+	gap: var(--spacer);
+	border-right: 1px solid hsl(0, 0%, 50%);
+}
+/**
+* Selections container
+*/
+.selections-container {
+	isolation: isolate;
+	z-index: 1;
+}
+.selection-viewer {
+	display: inline-flex;
+	align-items: center;
+	padding: 4px 16px;
+	color: hsl(0, 0%, 94%);
+	background-color: hsla(120, 100%, 20%, 0.75);
+	border: 1px solid hsl(0, 0%, 94%);
+	border-radius: 50px;
+	font-size: 14px;
+	position: fixed;
+	right: var(--spacer);
+	top: 227px;
+	z-index: 9;
+}
+.selection-viewer .icon {
+	width: 16px;
+	margin-right: 5px;
 }
 
 /* -------------------------
  * Responsive style
 ------------------------- */
+@media (max-width: 767.98px) {
+	.donors-section {
+		display: block;
+	}
+	.all-donors {
+		border: 0;
+	}
+}

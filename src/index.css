@@ -42,9 +42,10 @@ h1, h2, h3, h4, h5, h6 {
 a, button {
   text-decoration: none;
   color: inherit;
-  cursor: pointer;
   font-family: inherit;
-  font-weight: 400;
+  font-size: inherit;
+  font-weight: 500;
+  cursor: pointer;
 }
 ul, ol {
   padding-left: 30px;
@@ -55,6 +56,15 @@ section {
 /* -------------------------
  * Custom Classes
 ------------------------- */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
 .p-base {
   padding: var(--spacer);
 }

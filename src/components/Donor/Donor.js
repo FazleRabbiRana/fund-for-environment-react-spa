@@ -11,18 +11,21 @@ const Donor = (props) => {
 			<div className="donor-image">
 				<img src={grantorImage} alt={grantorName} />
 			</div>
-			<h3 className="name">{grantorName}</h3>
-			<p className="designation">{designation}</p>
-			<p className="organization"><em>{organization}, {nationality}</em></p>
-			<h4 className="grant">
+			<h3 className="donor-name mt-base">{grantorName}</h3>
+			<p className="donor-desc">
+				<span className="designation">{designation}</span>
+				<br />
+				<span className="organization">{organization}, {nationality}</span>
+			</p>
+			<h4 className="donor-grant py-base">
 				<span className="label">Grant Amount: </span>
 				<span className="value">${grantedAmount}</span>
 			</h4>
 			<button 
-				className="btn-regular"
+				className="btn-regular mt-base"
 				onClick={() => props.selectDonor(props.donor)}
 			>
-				<FontAwesomeIcon icon={faPlusCircle} />
+				<FontAwesomeIcon icon={faPlusCircle} className="icon" />
 				Select Donor
 			</button>
 		</div>

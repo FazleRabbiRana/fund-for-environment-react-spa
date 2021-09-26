@@ -1,5 +1,4 @@
 header {
-	text-align: center;
 	background: hsl(0, 0%, 94%);
 	color: hsl(0, 0%, 40%);
 }
@@ -22,9 +21,10 @@ header {
 	padding: calc(var(--spacer) / 2) var(--spacer);
 	padding-right: 0;
 	margin-left: var(--spacer);
-	border-left: 1px solid #eee;
+	border-left: 1px solid hsl(0, 0%, 94%);
 	font-weight: bold;
 	font-size: 32px;
+	word-spacing: 3px;
 }
 header p {
 	width: clamp(50%, 800px, 100%);
@@ -39,11 +39,12 @@ header h2 span {
 	font-size: 28px;
 	font-weight: bold;
 }
-/**
-* Fund amount
-*/
-.fund-amount {
-	display: inline-flex;
-	align-items: center;
-	background-color: hsl(120, 100%, 20%);
+
+/* -------------------------
+ * Responsive Header
+------------------------- */
+@media (max-width: 767.98px) {
+	header .description br {
+		display: none;
+	}
 }

@@ -1,8 +1,8 @@
 .donor {
 	text-align: center;
 	padding: 15px;
-	background-color: hsl(101, 100%, 35%);
-	color: hsl(220, 13%, 18%);
+	background-color: hsl(101, 100%, 30%);
+	color: hsl(220, 13%, 10%);
 	border-radius: 10px;
 	overflow: hidden;
 	position: relative;
@@ -28,10 +28,50 @@
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
-	border: 5px solid hsla(101, 100%, 50%, 0.5);
+	border: 5px solid hsla(101, 100%, 42%, 0.5);
 	margin: 0 auto;
 	overflow: hidden;
 }
 .donor-image img {
 	width: 100%;
+}
+.donor-name {
+	color: hsl(0, 0%, 95%);
+	font-size: 22px;
+}
+.donor-grant {
+	color: hsl(0, 0%, 95%);
+}
+.donor-grant .value {
+	font-size: 20px;
+}
+.donor-desc span {
+	font-weight: 500;
+	line-height: 1.2;
+}
+.donor-desc span.organization {
+	font-style: italic;
+	font-size: 85%;
+}
+/**
+* regular/select button
+*/
+.btn-regular {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 30px;
+	color: hsl(0, 0%, 94%);
+	background-color: hsl(220, 13%, 18%);
+	border: 3px solid hsl(0, 0%, 94%);
+	border-radius: 50px;
+	font-size: 15px;
+	transition: all 0.3s;
+}
+.btn-regular:hover {
+	color: hsl(220, 13%, 18%);
+	background-color: hsl(101, 100%, 60%);
+}
+.btn-regular .icon {
+	margin-right: 10px;
 }
