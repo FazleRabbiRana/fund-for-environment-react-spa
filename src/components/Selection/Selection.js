@@ -1,11 +1,14 @@
 import React from 'react';
 import './Selection.css';
 
-const Selection = () => {
+const Selection = (props) => {
+	const selections = props.selectedDonors;
 	return (
-		<div className="selected-donors">
-			<h3>Selected Donors</h3>
-		</div>
+		<ul className="selected-donors">
+			{
+				selections.map(donor => <li key={donor.id}>{donor.grantorName}</li>)
+			}
+		</ul>
 	);
 };
 

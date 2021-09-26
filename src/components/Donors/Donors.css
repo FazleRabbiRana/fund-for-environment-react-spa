@@ -1,5 +1,19 @@
+/**
+* Donors section
+*/
+.donors-section {
+	display: grid;
+	grid-template-columns: 1fr 315px;
+}
+/**
+* All donors
+*/
 .all-donors {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 	gap: 20px;
 }
+
+/* -------------------------
+ * Responsive style
+------------------------- */

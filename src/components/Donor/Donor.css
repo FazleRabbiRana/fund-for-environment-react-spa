@@ -1,4 +1,16 @@
 .donor {
+	text-align: center;
 	padding: 15px;
-	background-color: hsl(var(--clr-primary-dark-hsl));
+	background-color: hsl(var(--clr-primary-dark-base-hsl));
+}
+.donor-image {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 3px solid darkgray;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.donor-image img {
+	width: 100%;
 }

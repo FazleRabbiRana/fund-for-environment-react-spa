@@ -18,7 +18,10 @@ const Donor = (props) => {
 				<span className="label">Grant Amount:</span>
 				<span className="value">{grantedAmount}</span>
 			</h4>
-			<button className="btn-regular">
+			<button 
+				className="btn-regular"
+				onClick={() => props.selectDonor(props.donor)}
+			>
 				<FontAwesomeIcon icon={faPlusCircle} />
 				Select Donor
 			</button>
