@@ -1,0 +1,4 @@
+.donor {
+	padding: 15px;
+	background-color: hsl(var(--clr-primary-dark-hsl));
+}

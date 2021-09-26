@@ -1,0 +1,19 @@
+header {
+	text-align: center;
+	background: hsl(0, 0%, 94%);
+	color: hsl(0, 0%, 40%);
+}
+header h1,
+header h2 {
+	color: hsl(var(--clr-dark-hs), 15%);
+}
+header h1 {
+	font-weight: bold;
+}
+header h2 span {
+	font-weight: bold;
+}
+header p {
+	width: clamp(50%, 800px, 100%);
+	margin: 10px auto 15px;
+}
