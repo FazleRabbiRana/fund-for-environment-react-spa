@@ -3,14 +3,8 @@
 ------------------------- */
 :root {
   --spacer: 12px;
-  --clr-primary-dark-hsl: 148, 100%, 15%;
-  --clr-primary-dark-base-hs: 120, 100%;
-  --clr-primary-dark-base-hsl: 101, 100%, 35%;
-  --clr-primary-light-hsl: 75, 100%, 60%;
-  --clr-primary-light-base-hs: 83, 88%;
-  --clr-primary-light-base-hsl: 90, 100%, 44%;
-  --clr-dark-hsl: 220, 13%, 18%;
-  --clr-dark-hs: 220, 13%;
+  /* --clr-primary-hsl: 101, 100%, 35%;
+  --clr-dark-hsl: 220, 13%, 18%; */
 }
 *,
 *::before,
@@ -23,7 +17,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   line-height: 1.5;
-  background-color: hsl(var(--clr-dark-hsl));
+  background-color: hsl(220, 13%, 18%);
   color: hsl(0, 0%, 67%);
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
