@@ -1,6 +1,9 @@
-# Fundraising for Environment
+# Fund for Environment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The purpose We are raising a fund with the help of some great philanthropists to protect the environment.
+It's now or never.
+
+This project is deployed on Netlify [Live website link](https://ph-cwdc-react-fundraising.netlify.app/).
 
 ## Available Scripts
 
